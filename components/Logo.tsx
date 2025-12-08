@@ -8,7 +8,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ className = "h-[200px]", variant = 'dark' }) => {
   return (
     <img 
-      src="public/logo.png" 
+      src="/images/logo.svg" 
       alt="Koryn AI" 
       className={`${className} w-auto object-contain`}
     />

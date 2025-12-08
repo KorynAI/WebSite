@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <Logo className="h-10 mb-4" variant="light" />
+            <Logo className="h-48 mb-4" variant="light" />
             <p className="text-gray-400 text-sm max-w-xs text-center md:text-left">
               O sistema nervoso central da sua operação de saúde.
             </p>

@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Logo className={`h-10 md:h-12 transition-all ${scrolled ? 'scale-90' : 'scale-100'}`} variant="dark" />
+        <Logo className={`h-48 mb-4" transition-all ${scrolled ? 'scale-90' : 'scale-100'}`} variant="dark" />
         
         <a 
           href="mailto:contato@koryn.ai"

@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
 
         {/* Headline */}
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-koryn-teal mb-6 leading-tight max-w-5xl mx-auto">
-          A <span className="text-transparent bg-clip-text bg-gradient-to-r from-koryn-teal to-koryn-cyan">AI powered future!</span>
+          A <span className="text-transparent bg-clip-text bg-gradient-to-r from-koryn-teal to-koryn-cyan">AI-powered future!</span>
         </h1>
         
         <p className="font-sans text-xl md:text-2xl text-koryn-charcoal/80 mb-10 max-w-3xl mx-auto leading-relaxed">

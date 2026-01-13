@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 
 export const Header: React.FC = () => {
@@ -19,14 +20,24 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Logo className={`h-48 mb-4" transition-all ${scrolled ? 'scale-90' : 'scale-100'}`} variant="dark" />
+        <Link to="/">
+          <Logo className={`h-48 mb-4" transition-all ${scrolled ? 'scale-90' : 'scale-100'}`} variant="dark" />
+        </Link>
         
-        <a 
-          href="mailto:contato@koryn.ai"
-          className="hidden md:block px-6 py-2 rounded-full border border-koryn-teal text-koryn-teal hover:bg-koryn-teal hover:text-white transition-all font-medium text-sm"
-        >
-          Entre em Contato
-        </a>
+        <nav className="flex items-center space-x-4">
+          {/* <Link 
+            to="/pesquisa"
+            className="px-4 py-2 rounded-full border border-koryn-teal text-koryn-teal hover:bg-koryn-teal hover:text-white transition-all font-medium text-sm"
+          >
+            Pesquisa
+          </Link> */}
+          {/* <a 
+            href="mailto:contato@koryn.ai"
+            className="hidden md:block px-6 py-2 rounded-full border border-koryn-teal text-koryn-teal hover:bg-koryn-teal hover:text-white transition-all font-medium text-sm"
+          >
+            Entre em Contato
+          </a> */}
+        </nav>
       </div>
     </header>
   );

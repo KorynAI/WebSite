@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koryn AI | Formulário</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta name="description" content="Koryn AI: Inteligência no Centro da Vida." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              koryn: {
+                teal: '#005763',
+                cyan: '#26E6F7',
+                white: '#FFFFFF',
+                lightGray: '#F4F8F9',
+                charcoal: '#1A2A2D',
+                mutedTeal: '#80AAB3',
+                success: '#2ECC71',
+                error: '#E74C3C',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F4F8F9; /* koryn-lightGray para o fundo da página */
+        color: #1A2A2D;
+      }
+      /* Ajuste para o iframe ocupar espaço corretamente */
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col font-sans">
+
+    <header class="bg-white shadow-md z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-koryn-teal rounded-lg flex items-center justify-center text-white font-display font-bold text-xl">
+                        K
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-xl text-koryn-teal tracking-tight leading-none">
+                            Koryn AI
+                        </span>
+                        <span class="text-xs text-koryn-mutedTeal font-medium uppercase tracking-wider">
+                            Clinical Intelligence
+                        </span>
+                    </div>
+                </div>
+                
+                <a href="/" class="text-sm font-medium text-koryn-teal hover:text-koryn-charcoal transition-colors">
+                    &larr; Voltar ao Início
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-5xl">
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-koryn-mutedTeal/20">
+                <div class="bg-koryn-teal p-4 sm:px-8 py-6">
+                    <h1 class="text-white font-display font-semibold text-2xl">Pesquisa</h1>
+                    <p class="text-koryn-cyan/80 text-sm mt-1">Por favor, preencha as informações abaixo.</p>
+                </div>
+
+                <div class="p-4 sm:p-8 bg-white flex justify-center">
+                    <iframe 
+                        width="640px" 
+                        height="480px" 
+                        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__YXorqJUOVM2UlFRN1JENkkzQ0RRT0owVjFRTUVXRi4u&embed=true" 
+                        frameborder="0" 
+                        marginwidth="0" 
+                        marginheight="0" 
+                        style="border: none; max-width:100%; min-height:80vh;" 
+                        allowfullscreen 
+                        webkitallowfullscreen 
+                        mozallowfullscreen 
+                        msallowfullscreen> 
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-koryn-charcoal text-white py-8 border-t-4 border-koryn-cyan">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-lg">Koryn AI</span>
+            </div>
+            <p class="text-koryn-mutedTeal text-sm text-center md:text-right">
+                &copy; 2024 Koryn AI. A Ponte Biológica entre a empatia humana e a precisão artificial.
+            </p>
+        </div>
+    </footer>
+
+  </body>
+</html>

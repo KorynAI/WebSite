@@ -1,7 +1,4 @@
 import React from 'react';
-import { Header } from './Header';
-// Importe o Footer aqui se tiver, ex: import { Footer } from './Footer';
-
 const Pesquisa: React.FC = () => {
   return (
     // h-screen garante que a aplicação ocupe exatamente a altura da janela
@@ -24,10 +21,6 @@ const Pesquisa: React.FC = () => {
           title="Pesquisa Microsoft Forms"
         />
       </main>
-
-      {/* Coloque seu componente Footer aqui */}
-      {/* <Footer /> */}
-      
     </div>
   );
 };

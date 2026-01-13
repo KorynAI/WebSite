@@ -22,12 +22,10 @@ export const Hero: React.FC = () => {
       
       <div className="container mx-auto px-6 relative z-10 text-center">
         {/* Status Badge */}
-        <div className="flex items-center justify-center min-h-screen w-full">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-koryn-teal/10 text-koryn-teal mb-8 animate-fade-in-up">
           <Link to="/">
             <Logo className="h-48 mb-4 transition-all" variant="dark" />
           </Link>
-        </div>
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-koryn-teal/10 text-koryn-teal mb-8 animate-fade-in-up">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-koryn-teal opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-koryn-teal"></span>
